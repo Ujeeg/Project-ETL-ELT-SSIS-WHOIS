@@ -31,13 +31,13 @@ This project aims to perform ETL and ELT using SQL Server and SSIS. The data and
 
 
 #### A. Create connection to Local DB SQL SERVER
-![](2/2.A. Local Connection DB Server.png)
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/d4e121a16237f40f5b11328ad4d4de325ee70996/2/2.A.%20Local%20Connection%20DB%20Server.png)
 
 #### B. Create New Variable (ConfigObject)
-![](2/2.B. Make New Variable.png)
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/d4e121a16237f40f5b11328ad4d4de325ee70996/2/2.B.%20Make%20New%20Variable.png)
 
 #### C. Create Project Parameter (URLSource)
-![](2/2.C. Make Parameter.png)
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/677a031628d54e74ce8c577286802082c6e2981f/2/2.C.%20Make%20Parameter.png)
 
 
 ### 3. Download files from Source URL
