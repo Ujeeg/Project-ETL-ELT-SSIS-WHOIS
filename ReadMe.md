@@ -2,7 +2,7 @@
 
 ## Description:
 This project aims to perform ETL and ELT using SQL Server and SSIS. The data and domain used are obtained from the Domain WhoIs database by extracting a few sample data. The applications used for this project are SQL Server 2022 and Visual Studio Code 2022. The data is retrieved from the following domain: http://domainwhoisdatabase.com/whois_database/sample/gtlds/v44/sample/simple/
-
+![https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/bf78899c8df9f19fae7737d5fe9e1f113593fdc8/1/Domain.png]
 ## Objectives:
 
 1. Establish a connection from the domain to the local environment.
