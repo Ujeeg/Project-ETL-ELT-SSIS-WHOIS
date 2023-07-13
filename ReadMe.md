@@ -2,7 +2,7 @@
 
 ## Description:
 This project aims to perform ETL and ELT using SQL Server and SSIS. The data and domain used are obtained from the Domain WhoIs database by extracting a few sample data. The applications used for this project are SQL Server 2022 and Visual Studio Code 2022. The data is retrieved from the following domain: http://domainwhoisdatabase.com/whois_database/sample/gtlds/v44/sample/simple/
-![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/bf78899c8df9f19fae7737d5fe9e1f113593fdc8/1/Domain.png)
+![Source](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/bf78899c8df9f19fae7737d5fe9e1f113593fdc8/1/Domain.png)
 
 
 ## Objectives:
@@ -41,16 +41,43 @@ This project aims to perform ETL and ELT using SQL Server and SSIS. The data and
 
 
 ### 3. Download files from Source URL
-#### A. Create and Setting up Foreach Loop Container 
+#### A. Create and Setting up Foreach Loop Container
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/c489baa976b5ca7fa605e2406152f2d537cf8745/2/3.A%20Foreach%20Loop%20Container.png)
+
 #### B. Create FileConnection Variable dengan expression URLSource dan Configvalue
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/c489baa976b5ca7fa605e2406152f2d537cf8745/3/3.B.png)
+
 #### C. Create ConfigValue dengan value file yang akan di download
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/c489baa976b5ca7fa605e2406152f2d537cf8745/3/3.D%20expression.png)
+
 #### D. Make New Domain Connection (HTTP Connection Manager)
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/c489baa976b5ca7fa605e2406152f2d537cf8745/3/3.D.png)
+
 #### E. Create new Variable for destination (TargetFolderConnection)
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/c489baa976b5ca7fa605e2406152f2d537cf8745/3/3.E.png)
+
 ### 4. Create Script Task (Download Source Zipfile)
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/c489baa976b5ca7fa605e2406152f2d537cf8745/4/4.A%201.png)
+
+Create Script 
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/c489baa976b5ca7fa605e2406152f2d537cf8745/4/4.A%202.png)
+
 ### 5. Create Execute Procces Task (Unzip Source File)
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/c489baa976b5ca7fa605e2406152f2d537cf8745/5/5.1.png)
+
 ### 6. Create Data Flow Task
 #### A. Create Source connection (Flat File Source)
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/c489baa976b5ca7fa605e2406152f2d537cf8745/6/6.A%201.png)
+
 #### B. Create OLE DB connection (OLE DB Destination)
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/c489baa976b5ca7fa605e2406152f2d537cf8745/6/6.B%201.png)
+
+Checking Mapping Table
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/c489baa976b5ca7fa605e2406152f2d537cf8745/6/6.B%202.png)
+
+Create Variabel for dynamic
+![](https://github.com/Ujeeg/Project-ETL-ELT-SSIS-WHOIS/blob/c489baa976b5ca7fa605e2406152f2d537cf8745/6/6.B%202.1.png)
+
 ### 7. Create Achive system
 #### A. Create File System Task (Create Folder Archive if Not Exist)
 ##### a. Make Variable ArchiveFolderPath
